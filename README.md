@@ -17,5 +17,5 @@ Otherwise, if the token is invalid or expired, it will print `invalid token`.
 
 For more information, see the [authentication-token-verifier][] project.
 
-[authentication-token-verifier]: http://gitlab.cj.com/apis-partnerships/authentication-token-verifier
+[authentication-token-verifier]: http://github.com/cjdev/authentication-token-verifier
 [maven]: http://maven.apache.org
