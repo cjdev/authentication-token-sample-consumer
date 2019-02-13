@@ -14,6 +14,7 @@ public class Main {
       System.exit(1);
     }
     try (TokenVerifier tokenVerifier = new TokenVerifier(new URL("https://production-io.p.cjpowered.com/public-keys"), new URL("https://production-iam.p.cjpowered.com/token/verify"))) {
+      tokenVerifier.init();
       Optional<Token> token = tokenVerifier.verifyTokenString(args[0]);
       if (token.isPresent()) {
         System.out.println(token.get());
