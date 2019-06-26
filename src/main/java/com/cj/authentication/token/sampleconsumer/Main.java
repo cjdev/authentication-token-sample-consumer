@@ -13,7 +13,7 @@ public class Main {
       System.out.println("usage: authentication-token-sample-consumer <token>");
       System.exit(1);
     }
-    try (TokenVerifier tokenVerifier = new TokenVerifier(new URL("https://production-io.p.cjpowered.com/public-keys"), new URL("https://production-iam.p.cjpowered.com/token/verify"))) {
+    try (TokenVerifier tokenVerifier = new TokenVerifier(new URL("https://id.api.cj.com/public-keys"), new URL("https://id.api.cj.com/token/verify"))) {
       tokenVerifier.init();
       Optional<Token> token = tokenVerifier.verifyTokenString(args[0]);
       if (token.isPresent()) {
